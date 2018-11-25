@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FacilityRequest" xmlns:tns="http://www.example.org/FacilityRequest" elementFormDefault="unqualified">
+    <element name="FacilityInfo" type="tns:FacilityInfo"></element>
+    <element name="Facility" type="string"></element>
+    <element name="ShippingMethod" type="string"></element>
+    <element name="NumberOfDays" type="string"></element>
+    <complexType name="FacilityInfo">
+    	<sequence minOccurs="0" maxOccurs="1">
+    		<element name="FacilityInfo" type="tns:NewType3" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    <complexType name="NewType3">
+    	<sequence>
+    		<element name="Facility" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="calendar_date" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="carrier" type="string" minOccurs="0" maxOccurs="1"></element>
+    		<element name="NumberOfDays" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="ShippingMethod" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+    <element name="RequestDate" type="string"></element>
+</schema>

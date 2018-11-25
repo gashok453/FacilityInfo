@@ -1,0 +1,57 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8085",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/test11" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-test11",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "calendar_date",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "facility",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a FacilityInfo to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/FacilityInfo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "FacilityInfo" : {
+      "type" : "object",
+      "properties" : {
+        "FacilityInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/FacilityInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

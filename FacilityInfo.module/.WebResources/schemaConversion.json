@@ -1,0 +1,47 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.Process-GetFacilityInfo.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.FacilityInfo-FacilityInfo.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityRequest"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.FacilityInfo-FacilityInfo.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.Test-Test.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.Test1-Test11.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.FacilityInformation-FacilityInformation.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityRequest"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.FacilityInformation-FacilityInformation.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.Facilityinformation-FacilityInfo.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityRequest"
+    },
+    {
+        "jsonSchemaLocation": "/FacilityInfo.module/Service Descriptors/facilityinfo.module.Facilityinformation-FacilityInfo.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/FacilityResponse"
+    }
+]}

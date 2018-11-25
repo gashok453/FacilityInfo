@@ -1,0 +1,51 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/facilityinfo" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-facilityinfo",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a FacilityInfo to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/FacilityInfo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "FacilityInfo" : {
+      "type" : "object",
+      "properties" : {
+        "FacilityInfo" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/FacilityInfo",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

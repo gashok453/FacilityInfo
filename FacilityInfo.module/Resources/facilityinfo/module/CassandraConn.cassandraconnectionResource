@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cassandra="http://ns.tibco.com/bw/sharedresource/cassandra" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_E91PUeH4EeiQfZf2EyD7Sw" name="facilityinfo.module.CassandraConn" type="cassandra:CassandraConnection">
+  <jndi:configuration xsi:type="cassandra:CassandraConnection" xmi:id="_E93EgOH4EeiQfZf2EyD7Sw" FetchSize="5000" Credential="true" RetryPolicy="DefaultRetryPolicy" LoadBalancingPolicy="RoundRobinPolicy">
+    <substitutionBindings xmi:id="_BgG8EOw8EeilMLzemJmRFw" template="KeySpace" propName="/Cassandra/keyspace"/>
+    <substitutionBindings xmi:id="_Dk0l0Ow8EeilMLzemJmRFw" template="Nodes" propName="/Cassandra/Node"/>
+    <substitutionBindings xmi:id="_EOxhwOw8EeilMLzemJmRFw" template="ConnectionTimeout" propName="/Cassandra/ConnectionTimeout"/>
+    <substitutionBindings xmi:id="_E-6lQOw8EeilMLzemJmRFw" template="ReadTimeout" propName="/Cassandra/ReadTimeout"/>
+    <substitutionBindings xmi:id="_FqstMOw8EeilMLzemJmRFw" template="UserName" propName="/Cassandra/Username"/>
+    <substitutionBindings xmi:id="_GZyAwOw8EeilMLzemJmRFw" template="PassWord" propName="/Cassandra/Password"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,33 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/facilityinfo.module.Process-GetFacilityInfo.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.FacilityInfo-FacilityInfo.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.Test-Test.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.Test1-Test11.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.FacilityInformation-FacilityInformation.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.Facilityinformation-FacilityInfo.json",
+            "type": "generated"
+        }
+    ]
+}
