@@ -11,6 +11,18 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_TOpyweacEeiOoeCdGDT_-w" bindingName="RestService1"/>
   </sca:service>
+  <sca:service xmi:id="_St82cPCBEeisFoKfusK91A" name="lbtest" promote="Componentlbtest/lbtest">
+    <sca:interface.wsdl xmi:id="_SuELMPCBEeisFoKfusK91A" interface="http://xmlns.example.com/20181125021033PLT#wsdl.interface(lbtest)" scaext:wsdlLocation="../Processes/facilityinfo/module/lbtest.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_SuH1kPCBEeisFoKfusK91A" name="RestService" path="/*" docBasePath="http://localhost:7777/FacilityInfo.module" docResourcePath="lbtest" basePath="/" connector="facilityinfo.module.FacilityInformation" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/facilityinfo.module.lbtest-lbtest.json">
+      <operation xmi:id="_SuJDsPCBEeisFoKfusK91A" operationName="get" nickname="get-lbtest" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_SuPxYPCBEeisFoKfusK91A"/>
+      <advancedConfig xmi:id="_SuH1kfCBEeisFoKfusK91A" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_SuJqwPCBEeisFoKfusK91A" bindingName="RestService"/>
+  </sca:service>
   <sca:property xmi:id="_6qK0oOKbEeik1oTkJoIjRQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_6qdIgOKbEeik1oTkJoIjRQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_6qgL0OKbEeik1oTkJoIjRQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -29,6 +41,12 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_MK4OAeacEeiOoeCdGDT_-w" processName="facilityinfo.module.Facilityinformation"/>
     <sca:service xmi:id="_TN9PMOacEeiOoeCdGDT_-w" name="facilityinfo">
       <sca:interface.wsdl xmi:id="_TN_rcOacEeiOoeCdGDT_-w" interface="http://xmlns.example.com/20181112115833PLT#wsdl.interface(facilityinfo)" scaext:wsdlLocation="../Processes/facilityinfo/module/Facilityinformation.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_M2pE0PCBEeisFoKfusK91A" name="Componentlbtest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_M2pE0fCBEeisFoKfusK91A" processName="facilityinfo.module.lbtest"/>
+    <sca:service xmi:id="_St4lAPCBEeisFoKfusK91A" name="lbtest">
+      <sca:interface.wsdl xmi:id="_St5zIPCBEeisFoKfusK91A" interface="http://xmlns.example.com/20181125021033PLT#wsdl.interface(lbtest)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

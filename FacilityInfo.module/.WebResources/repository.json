@@ -28,6 +28,10 @@
         {
             "location": "Service Descriptors/facilityinfo.module.Facilityinformation-FacilityInfo.json",
             "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/facilityinfo.module.lbtest-lbtest.json",
+            "type": "generated"
         }
     ]
 }
